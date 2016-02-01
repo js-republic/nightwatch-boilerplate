@@ -1,0 +1,30 @@
+{
+  "name": "nightwatch-demo",
+  "version": "1.0.0",
+  "description": "Nightwatch demonstration project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/nightwatch/bin/nightwatch -c nightwatch.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/js-republic/nightwatch-demo.git"
+  },
+  "keywords": [
+    "Nightwatch",
+    "Acceptance",
+    "Tests",
+    "Selenium"
+  ],
+  "author": "Mathieu Breton",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/js-republic/nightwatch-demo/issues"
+  },
+  "homepage": "https://github.com/js-republic/nightwatch-demo#readme",
+  "devDependencies": {
+    "chromedriver": "^2.21.2",
+    "nightwatch": "^0.8.15",
+    "selenium-server-standalone-jar": "^2.50.1"
+  }
+}
