@@ -1,5 +1,5 @@
 module.exports = {
-    'Search on google': (browser) => {
+    'Go To google': (browser) => {
         browser
             .init()
             .waitForElementVisible('body', 1000)
@@ -7,10 +7,15 @@ module.exports = {
             .waitForElementVisible('button[name=btnG]', 1000)
             .click('button[name=btnG]')
             .pause(1000)
-            .assert.containsText('#main', 'Night Watch')
-            .end()
     },
-    after: (browser)=> {
-        browser.end()
+
+    'Check movie name': (browser) => {
+        browser
+            .assert.containsText('.mod .kno-ecr-pt.kno-fb-ctx', 'Night Watch')
+            .assert.containsText('.mod ._gdf', '2004')
+    },
+
+    after: (browser) => {
+        browser.end();
     }
 };
