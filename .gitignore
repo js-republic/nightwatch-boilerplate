@@ -21,3 +21,5 @@ node_modules
 # Tests output
 nw/logs
 nw/reports
+
+.DS_Store
