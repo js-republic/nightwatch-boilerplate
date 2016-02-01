@@ -19,7 +19,8 @@ node_modules
 .node_repl_history
 
 # Tests output
-nw/logs
 nw/reports
 
 .DS_Store
+*.iml
+.idea
