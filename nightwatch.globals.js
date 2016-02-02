@@ -1,11 +1,11 @@
 module.exports = {
-    'default': { // Paramètres de l'environement 'default'
-        searchTerm : 'nightwatch',
-        movieName : 'Night Watch'
+    default: { // Paramètres de l'environement 'default'
+        searchTerm: 'nightwatch',
+        movieName: 'Night Watch'
     },
-    'french': { // Paramètres de l'environement 'french'
-        searchTerm : 'dikkenek',
-        movieName : 'dikkenek'
+    french: { // Paramètres de l'environement 'french'
+        searchTerm: 'dikkenek',
+        movieName: 'dikkenek'
     },
 
     // Arrête tout dès qu'un test échoue
@@ -17,7 +17,7 @@ module.exports = {
     // Délais à attendre par défault
     waitForConditionTimeout: 1000,
 
-    // Echoue si une selection retourne plusieurs alors qu'elle devrait n'en retourner qu'un
+    // Echoue si une selection retourne plusieurs éléments alors qu'elle devait n'en retourner qu'un
     throwOnMultipleElementsReturned: false,
 
     // Avant et après l'éxecution de l'ensemble des tests
