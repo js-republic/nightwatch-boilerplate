@@ -1,16 +1,11 @@
 {
   "src_folders" : ["nw/tests"],
   "output_folder" : "nw/reports",
-  "custom_commands_path" : ["nw/commands"],
-  "custom_assertions_path" : ["nw/assertions"],
-  "page_objects_path" : ["nw/pages"],
   "globals_path" : "nightwatch.globals.js",
-
   "test_workers": {
     "enabled": true,
     "workers": "auto"
   },
-
   "selenium" : {
     "start_process" : true,
     "server_path" : "./node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-2.50.1.jar",
@@ -22,7 +17,6 @@
       "webdriver.ie.driver" : ""
     }
   },
-
   "test_settings" : {
     "default" : {
       "launch_url" : "http://google.com",
