@@ -2,6 +2,9 @@
   "src_folders" : ["nw/tests"],
   "output_folder" : "nw/reports",
   "globals_path" : "nightwatch.globals.js",
+  "page_objects_path": "nw/pages",
+  "custom_commands_path" : ["nw/commands"],
+  "custom_assertions_path" : ["nw/assertions"],
   "test_workers": {
     "enabled": true,
     "workers": "auto"
