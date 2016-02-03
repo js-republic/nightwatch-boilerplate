@@ -1,16 +1,14 @@
 module.exports = {
     'Search on google': (browser) => {
+        const google = browser.page.google();
         browser
             .init()
-            .waitForElementVisible('body')
-            .setValue('input[type=text]', browser.globals.searchTerm)
-            .waitForElementVisible('button[name=btnG]')
-            .click('button[name=btnG]')
-            .pause(1000)
+            .page.google().fillInSearchInput()
+            .page.google().submit()
             .assert.containsText('#main', browser.globals.movieName)
-            .end()
+            .end();
     },
     after: (browser)=> {
-        browser.end()
+        browser.end();
     }
 };
