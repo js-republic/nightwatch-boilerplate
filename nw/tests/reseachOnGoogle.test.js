@@ -1,6 +1,5 @@
 module.exports = {
     'Search on google': (browser) => {
-        const google = browser.page.google();
         browser
             .init()
             .page.google().fillInSearchInput()
