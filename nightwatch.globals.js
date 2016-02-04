@@ -1,33 +1,36 @@
 module.exports = {
-    default: { // Paramètres de l'environement 'default'
-        searchTerm: 'nightwatch',
-        movieName: 'Night Watch'
+    'default': { // 'default' environnement parameters
+        searchTerm : 'nightwatch',
+        movieName : 'Night Watch'
     },
-    french: { // Paramètres de l'environement 'french'
-        searchTerm: 'dikkenek',
-        movieName: 'dikkenek'
+    'french': { // 'french' environnement parameters
+        searchTerm : 'dikkenek',
+        movieName : 'dikkenek'
     },
 
-    // Arrête tout dès qu'un test échoue
+    // Abord all on test fail
     abortOnAssertionFailure: true,
 
-    // Délais entre deux vérifications
+    // Duration between two checks
     waitForConditionPollInterval: 300,
 
-    // Délais à attendre par défault
+    // Timeout duration
     waitForConditionTimeout: 1000,
 
-    // Echoue si une selection retourne plusieurs éléments alors qu'elle devait n'en retourner qu'un
+    /*
+     * Define if the test failed when many HTML elements are found when
+     * we expect only one
+     */
     throwOnMultipleElementsReturned: false,
 
-    // Avant et après l'éxecution de l'ensemble des tests
+    // Before/After Hooks of all tests
     before: (next) => next(),
     after: (next) => next(),
 
-    //  Avant et après chaque éxecution de suite des tests
+    // Before/After Hooks of test suites
     beforeEach: (browser, next) => next(),
     afterEach: (browser, next) => next(),
 
-    // Pour customiser le reporter de test
+    // To customize output report
     reporter: (results, next) => next()
 };
