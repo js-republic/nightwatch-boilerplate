@@ -1,6 +1,6 @@
-#Nightwatch Boilerplate project
+# Nightwatch Boilerplate project
 
-##Getting Started
+## Getting Started
 
 Install deps :
 `npm install`
