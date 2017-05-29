@@ -15,5 +15,8 @@ The project is organize as following :
  * nw/logs : Selenium log
  * nw/reports : xUnit reports
  * nw/tests : Test suites
+ * nw/assertions : Custom assertions
+ * nw/commands : Custom commands
+ * nw/pages : Page objects
  * nightwatch.json : Nightwatch configuration file
  * nightwatch.gloabls.js : Nightwatch globals file
