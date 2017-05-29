@@ -4,7 +4,7 @@
   "description": "Nightwatch demonstration project",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/nightwatch/bin/nightwatch -c nightwatch.json"
+    "test": "nightwatch -c nightwatch.json"
   },
   "repository": {
     "type": "git",
@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/js-republic/nightwatch-demo#readme",
   "devDependencies": {
-    "chromedriver": "2.21.2",
-    "nightwatch": "0.8.15",
-    "selenium-server-standalone-jar": "2.50.1"
+    "chromedriver": "2.29.0",
+    "nightwatch": "0.9.15",
+    "selenium-server-standalone-jar": "3.4.0"
   }
 }
