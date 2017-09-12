@@ -16,4 +16,4 @@ The project is organize as following :
  * nw/reports : xUnit reports
  * nw/tests : Test suites
  * nightwatch.json : Nightwatch configuration file
- * nightwatch.gloabls.js : Nightwatch globals file
+ * nightwatch.globals.js : Nightwatch globals file
